@@ -91,4 +91,3 @@ plot_summary = function(trueA, trueB, trueSd, burnIn, chain, num_class = 30){
 plot_summary(trueA, trueB, trueSd, burnIn, chain, num_class = 30)
 # for comparison:
 summary(lm(y~x))
-
