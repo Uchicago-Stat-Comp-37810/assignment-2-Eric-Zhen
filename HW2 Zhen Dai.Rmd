@@ -35,9 +35,28 @@ compare_outcomes = function(iterations){
   return(mean_final)
 }
 
+
 co1 = compare_outcomes(1000)
+
+
 co2 = compare_outcomes(10000)
+
+
 co3 = compare_outcomes(100000)
+
+
+co4 = compare_outcomes(2000)
+
+
+co5 = compare_outcomes(3000)
+
+
+co6 = compare_outcomes(6000)
+
+
+co7 = compare_outcomes(8000)
+
+
 
 co1
 
@@ -45,16 +64,36 @@ co2
 
 co3
 
+co4
+
+co5
+
+co6
+
+co7
+
+co = c(co1, co2, co3, co4, co5, co6, co7) - 5
+
+me = mean(co)
 
 ```
 
-The mean of a is 5.247364 for the iteration of 1000 times. Thus, the estimation error is 0.247364.
+The mean of a is `r co1` for the iteration of 1000 times. Thus, the estimation error is `r co[1]`.
 
-The mean of a is 5.253159 for the iteration of 10000 times. Thus, the estimation error is 0.253159.
+The mean of a is `r co2` for the iteration of 10000 times. Thus, the estimation error is `r co[2]`.
 
-The mean of a is 5.256932 for the iteration of 100000 times.Thus, the estimation error is 0.256932. 
+The mean of a is `r co3` for the iteration of 100000 times.Thus, the estimation error is `r co[3]`. 
 
-From the results, we see that the predcted value of the slope tends to have a mean around 5.25 with standard deviation around 0.24.
+The mean of a is `r co4` for the iteration of 2000 times.Thus, the estimation error is `r co[4]`. 
+
+The mean of a is `r co5` for the iteration of 3000 times.Thus, the estimation error is `r co[5]`. 
+
+The mean of a is `r co6` for the iteration of 6000 times.Thus, the estimation error is `r co[6]`. 
+
+The mean of a is `r co7` for the iteration of 8000 times.Thus, the estimation error is `r co[7]`. 
+
+
+From the results, we see that the predcted value of the slope tends to have a mean around `r co1` with standard deviation around 0.22.
 Also, the outcomes seem to be relatively stable since the means and standard deviations in each of the 10 rounds are close to each other.
 Also, the values we get for different iterations are also similar which means that the markov chain is close to its stationary distribution when we iterate is over 1000 times.
-Also, the accurace of this algorithm is pretty good since the average error of the slope is about 0.25. Also, this value doesn't change much when we increase the number of iterations. Thus, this algorithm is both accurate and stable.
+Also, the accurace of this algorithm is pretty good since the average error of the slope is about `r me`. Also, this value doesn't change much when we increase the number of iterations. Thus, this algorithm is both accurate and stable.
