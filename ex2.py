@@ -14,3 +14,5 @@ print("I could have code like this.") #and the comment after is ignored
 
 print("This will run.")
 
+
+#see the use of comment. Either make the program more readable or comment out some code

@@ -19,3 +19,4 @@ print("We can tansport", carpool_capacity, "people today.")
 print("We have", passengers,"to carpool today.")
 print("We need to put about", average_passengers_per_car,"in each car.")
 
+#doing some simple operations and giving values to some variables. Print out some logical relations between these variables.

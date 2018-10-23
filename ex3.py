@@ -19,3 +19,4 @@ print("Is it greater?", 5>-2)
 print("Is it greater or equal?", 5>=-2)
 print("Is it less or equal?", 5<=-2)
 
+#See how math operation behaves in print and the order of operations
